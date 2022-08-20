@@ -1,0 +1,21 @@
+
+
+members = {}
+while True :
+    id = input('예약자 성함을 입력해주세요')
+    if id in members:
+        print('이미 등록된 이름 입니다') 
+
+    else:    
+        id_ask = input(f'예약자님의 성함은 {id}입니다. 맞으면 1번, 틀리면 2번을 눌러주세요')
+        if '1' in id_ask:
+            members = {id:' '}
+            pw = input('예약자 비밀번호를 입력해주세요')
+            members[id]=pw
+            print('등록이 완료되었습니다.')
+            print(members)
+            
+
+    # if len(members)>5:
+    #     print('테이블 모집이 마감되었습니다. 더빨리오지 ㅉㅉ')
+    #     break
